@@ -113,7 +113,12 @@ if(strcmp(escolha, "A1") == 0){
                 }else{
 		   printf( "Esta não é uma posição válida. %s\n", escolha);
 		}
-
+		
+		if(A1 = 'X' && escolha == A1){
+ printf( "Posição já tomada.\n" );
+ }else{ 
+  continue
+ }
 
               
 	        }	
