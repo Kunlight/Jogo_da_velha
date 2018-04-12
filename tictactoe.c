@@ -148,7 +148,9 @@
                    exit(0);
                 }else{
 		   printf( "Esta não é uma posição válida. %s\n", escolha);
+
 		}        
+
               
 	        }	
         return 0;
