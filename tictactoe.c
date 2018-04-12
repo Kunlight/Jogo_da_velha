@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
         
 	int jogo(char *A1, char *B1, char *C1, char *A2, char *B2, char  *C2, char *A3, char *B3, char *C3, int *jogador){
                 printf( "		   A          B        C			\n");		
@@ -23,11 +24,14 @@
 		printf( " 			#           #		\n");
                 
                 if((*A1 != ' ' && *A1 == *B1 && *B1 == *C1) || (*A1 != ' ' && *A1 == *A2 && *A2 == *A3) || (*A1 != ' ' && *A1 == *B2 && *B2 == *C3) || (*A3 != ' ' && *A3 == *B2 && *B2 == *C1) || (*B1 != ' ' && *B1 == *B2 && *B2 == *B3) || (*A2 != ' ' && *A2 == *B2 && *B2 == *C2) || (*A3 != ' ' && *A3 == *B3 && *B3 == *C3) || (*C1 != ' ' && *C1 == *C2 && *C2 == *C3)){
-                printf( " FIM DE JOGO!!!, JOGADOR %d GANHOU!!! \n", *jogador );
+                printf( " FIM DE JOGO!!!, JOGADOR %d GANHOU!!! \n\n ...Ｂｏｒｉｎｇ．　タ煙の\n\n", *jogador );
                 exit(0);
                 }
+                else if((*A1 != ' ' && *C1 != ' ' && *C3 != ' ') || (*A1 != ' ' && *C1 != ' ' && *A3 != ' ') || (*A3 != ' ' && *A1 != ' ' && *C3 != ' ') || (*A3 != ' ' && *C1 != ' ' && *A1 != ' ')){
+                printf( "Ｈｅｈ．．Ｖｅｊｏ　ｑｕｅ　ｏ　ｄｅｓｔｉｎｏ　ｄｅ　ａｌｇｕéｍ　ｊá　ｆｏｉ　ｄｅｃｉｄｉｄｏ．　へ　浦ス　さテ　ルクッ゛\n\n" );
+                }      
                 else if(*A1 != ' ' && *A2 != ' ' && *A3 != ' ' && *B1 != ' ' && *B2 != ' ' && *B3 != ' ' && *C1 != ' ' && *C2 != ' ' && *C3 != ' '){
-           printf("Deu velha!\n");
+                printf("Deu velha!\n ．．．Ｈｍｐｈ．　リョ姻\n\n");
                 exit(0);       
                 }else{
 		return 0;
@@ -58,9 +62,9 @@
                 jogador = 1;
 		char escolha[3];
                 printf( "\n\n\n\n" );
-		printf( "Ｂｅｍ ｖｉｎｄｏ ａｏ ｍｅｕ ｄｏｍíｎｉｏ, ｓｅｒｅｓ ｉｎｆｅｒｉｏｒｅｓ.\n" );
-                printf( "Ｃｒｅｉｏ ｑｕｅ ｄｅｓｅｊａｍ ｂａｔａｌｈａｒ ｅｎｔｒｅ ｓｉ, ｐｏｉｓ ｅｕ ｓｅｉ ｑｕｅ ｅｓｔｅ ｄｉａ ｎãｏ ａｇｕａｒｄａ ｎｏｓｓａ ｂａｔａｌｈａ　因ぅ違.\n");
-                printf( "Ｕｍ ｍｅｒｏ ｃｏｍｐｕｔａｄｏｒ é ｏ ｓｕｆｉｃｉｅｎｔｅ ｐａｒａ ｇｕｉá-ｌｏｓ, ｅｓｔａｒｅｉ ｏｂｓｅｒｖａｎｄｏ.\n\n" );
+		printf( "Ｂｅｍ ｖｉｎｄｏ ａｏ ｍｅｕ ｄｏｍíｎｉｏ, ｓｅｒｅｓ ｉｎｆｅｒｉｏｒｅｓ.\n\n" );
+                printf( "Ｃｒｅｉｏ ｑｕｅ ｄｅｓｅｊａｍ ｂａｔａｌｈａｒ ｅｎｔｒｅ ｓｉ, ｐｏｉｓ ｅｕ ｓｅｉ ｑｕｅ ｅｓｔｅ ｄｉａ ｎãｏ ａｇｕａｒｄａ ｎｏｓｓａ ｂａｔａｌｈａ　因ぅ違.\n\n");
+                printf( "Ｕｍ ｍｅｒｏ ｃｏｍｐｕｔａｄｏｒ é ｏ ｓｕｆｉｃｉｅｎｔｅ ｐａｒａ ｇｕｉá-ｌｏｓ, ｅｓｔａｒｅｉ ｏｂｓｅｒｖａｎｄｏ.\n\n\n" );
 		printf( "Bem vindos ao jogo da velha, boa sorte a ambos!\n" );
                 printf( "Esta será a base, decore as casas de A a B e 1 a 3\n"	); 
 		printf( "%c", jogo(&A1, &B1, &C1, &A2, &B2, &C2, &A3, &B3, &C3, &jogador));		
@@ -147,7 +151,7 @@
 		}else if(strcmp(escolha, "S") == 0){
                    exit(0);
                 }else{
-		   printf( "Esta não é uma posição válida. %s\n", escolha);
+		   printf( "Esta não é uma posição válida. %s\n Ｆｏｏｌ．　ジ気ベ\n", escolha);
 
 		}        
 
